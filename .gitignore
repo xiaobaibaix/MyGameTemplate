@@ -57,7 +57,7 @@ _deps/
 
 # -------------------- IDE & Editor --------------------
 # Visual Studio Code
-.vscode/
+# .vscode/  # 保留 VS Code 配置
 
 # CLion
 .idea/

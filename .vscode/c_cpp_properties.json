@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/cocos2d/cocos/**",
+                "${workspaceFolder}/cocos2d/**",
+                "${workspaceFolder}/cocos2d/external/**",
+                "${workspaceFolder}/cocos2d/extensions/**",
+                "${workspaceFolder}/cocos2d/tools/**",
+                "${workspaceFolder}/classes/**",
+                "D:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/include",
+                "D:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/atlmfc/include",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/ucrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/shared",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/cppwinrt"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "_CRT_SECURE_NO_WARNINGS",
+                "WIN32",
+                "_WINDOWS",
+                "COCOS2D_DEBUG=1"
+            ],
+            "compilerPath": "D:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}
