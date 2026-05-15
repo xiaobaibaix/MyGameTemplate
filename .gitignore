@@ -1,0 +1,177 @@
+# ==================== Cocos2d-x Project Gitignore ====================
+
+# -------------------- Build Output --------------------
+# Visual Studio
+*.obj
+*.pch
+*.pdb
+*.idb
+*.ilk
+*.exe
+*.dll
+*.lib
+*.exp
+*.manifest
+*.res
+*.aps
+*.ncb
+*.suo
+*.sdf
+*.opensdf
+*.cachefile
+*.VC.db
+*.VC.opendb
+ipch/
+.vs/
+
+# Build directories
+Debug/
+Release/
+Debug.win32/
+Release.win32/
+Debug.android/
+Release.android/
+win32-build/
+linux-build/
+mac-build/
+ios-build/
+android-build/
+build/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# -------------------- Compiled Binaries --------------------
+*.o
+*.a
+*.so
+*.dylib
+*.class
+*.jar
+
+# -------------------- IDE & Editor --------------------
+# Visual Studio Code
+.vscode/
+
+# CLion
+.idea/
+*.iml
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# Eclipse
+.settings/
+.cproject
+.project
+
+# -------------------- Platform Specific --------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.nfs*
+
+# -------------------- Cocos2d-x Specific --------------------
+# Generated files
+proj.android-studio/app/assets/
+proj.android-studio/app/obj/
+proj.android/app/assets/
+proj.android/obj/
+proj.android/bin/
+proj.android/gen/
+proj.ios_mac/build/
+proj.linux/bin/
+proj.tizen/bin/
+
+# External libraries (keep headers, ignore prebuilt binaries if needed)
+# Uncomment if you want to ignore prebuilt libs
+# cocos2d/external/*/prebuilt/
+
+# -------------------- Logs & Temp --------------------
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# -------------------- Package Managers --------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# -------------------- Keep These --------------------
+# Source code
+!*.cpp
+!*.h
+!*.hpp
+!*.c
+!*.cc
+
+# Headers
+!*.inl
+!*.inc
+
+# Resources
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.bmp
+!*.tga
+!*.plist
+!*.fnt
+!*.ttf
+!*.ogg
+!*.mp3
+!*.wav
+!*.json
+!*.xml
+!*.lua
+!*.js
+
+# Project files
+!*.vcxproj
+!*.vcxproj.filters
+!*.sln
+!CMakeLists.txt
+!*.cmake
+
+# Config files
+!.gitignore
+!README.md
+!LICENSE

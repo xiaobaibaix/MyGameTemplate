@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}</ProjectGuid>
+    <RootNamespace>ExternalLibs</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\Classes\External\behaviac\inc;$(ProjectDir)..\..\Classes\External\entt\single_include;$(ProjectDir)..\..\Classes\External\imgui;$(ProjectDir)..\..\Classes\External\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\Classes\External\behaviac\inc;$(ProjectDir)..\..\Classes\External\entt\single_include;$(ProjectDir)..\..\Classes\External\imgui;$(ProjectDir)..\..\Classes\External\imgui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <!-- behaviac 源文件 -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\agent.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\context.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\namedevent.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\propertynode.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\state_t.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\taskmethod.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\behaviortree.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\behaviortree_task.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\registernodes.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\attachments\Effector.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\attachments\Precondition.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\attachments\attachaction.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\attachments\event.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\action.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\assignment.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\compute.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\end.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\noop.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\wait.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\waitforsignal.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\waitframes.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\and.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\condition.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\conditionbase.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\false.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\or.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\true.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\compositestochastic.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\ifelse.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\parallel.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\referencebehavior.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\selector.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\selectorloop.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\selectorprobability.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\selectorstochastic.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\sequence.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\sequencestochastic.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\withprecondition.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratoralwaysfailure.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratoralwaysrunning.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratoralwayssuccess.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorcount.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorcountlimit.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorfailureuntil.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorframes.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratoriterator.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorlog.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorloop.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorloopuntil.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratornot.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorrepeat.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorsuccessuntil.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratortime.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorweight.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\assert.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\base.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\convertutf.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\crc.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\factory.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\meta.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\operation.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\rttibase.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\system_vcc.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\workspace.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\file\file.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\file\filemanager.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\file\filesystem_vcc.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\file\listfiles.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\logger\logger.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\logger\logmanager.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\memory\memory.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\object\tagobject.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\profiler\profiler.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\randomgenerator\randomgenerator.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\serialization\textnode.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\socket\defaultsocketwrapper_vcc.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\socket\socketconnect.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\socket\socketconnect_base.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\string\stringcrc.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\string\stringutils.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\thread\mutex_vcc.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\thread\wrapper.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\thread\wrapper_vcc.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\xml\xml.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\xml\xmlanalyzer.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\alwaystransition.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\fsm.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\fsmstate.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\startcondition.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\transitioncondition.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\waitframesstate.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\waitstate.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\waittransition.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\agentproperties.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\agentstate.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\htnmethod.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\planner.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\plannertask.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\task.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\network\network.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\property\properties.cpp" />
+    <ClCompile Include="..\..\Classes\External\behaviac\src\property\property.cpp" />
+    <!-- ImGui 源文件 -->
+    <ClCompile Include="..\..\Classes\External\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\Classes\External\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\Classes\External\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\Classes\External\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\Classes\External\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\Classes\External\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\..\Classes\External\imgui\backends\imgui_impl_opengl3.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

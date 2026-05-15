@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="behaviac">
+      <UniqueIdentifier>{a1b2c3d4-1111-2222-3333-444455556666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\agent">
+      <UniqueIdentifier>{b1c2d3e4-1111-2222-3333-444455556667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\behaviortree">
+      <UniqueIdentifier>{c1d2e3f4-1111-2222-3333-444455556668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\behaviortree\attachments">
+      <UniqueIdentifier>{d1e2f3a4-1111-2222-3333-444455556669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\behaviortree\nodes">
+      <UniqueIdentifier>{e1f2a3b4-1111-2222-3333-44445555666a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\behaviortree\nodes\actions">
+      <UniqueIdentifier>{f1a2b3c4-1111-2222-3333-44445555666b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\behaviortree\nodes\conditions">
+      <UniqueIdentifier>{a2b3c4d5-1111-2222-3333-44445555666c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\behaviortree\nodes\composites">
+      <UniqueIdentifier>{b3c4d5e6-1111-2222-3333-44445555666d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\behaviortree\nodes\decorators">
+      <UniqueIdentifier>{c4d5e6f7-1111-2222-3333-44445555666e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common">
+      <UniqueIdentifier>{d5e6f7a8-1111-2222-3333-44445555666f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\file">
+      <UniqueIdentifier>{e6f7a8b9-1111-2222-3333-444455556670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\logger">
+      <UniqueIdentifier>{f7a8b9c0-1111-2222-3333-444455556671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\memory">
+      <UniqueIdentifier>{a8b9c0d1-1111-2222-3333-444455556672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\object">
+      <UniqueIdentifier>{b9c0d1e2-1111-2222-3333-444455556673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\profiler">
+      <UniqueIdentifier>{c0d1e2f3-1111-2222-3333-444455556674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\randomgenerator">
+      <UniqueIdentifier>{d1e2f3a4-2222-3333-4444-555566667777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\serialization">
+      <UniqueIdentifier>{e2f3a4b5-2222-3333-4444-555566667778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\socket">
+      <UniqueIdentifier>{f3a4b5c6-2222-3333-4444-555566667779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\string">
+      <UniqueIdentifier>{a4b5c6d7-2222-3333-4444-55556666777a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\thread">
+      <UniqueIdentifier>{b5c6d7e8-2222-3333-4444-55556666777b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\common\xml">
+      <UniqueIdentifier>{c6d7e8f9-2222-3333-4444-55556666777c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\fsm">
+      <UniqueIdentifier>{d7e8f9a0-2222-3333-4444-55556666777d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\htn">
+      <UniqueIdentifier>{e8f9a0b1-2222-3333-4444-55556666777e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\network">
+      <UniqueIdentifier>{f9a0b1c2-2222-3333-4444-55556666777f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="behaviac\property">
+      <UniqueIdentifier>{a0b1c2d3-2222-3333-4444-555566667780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{b1c2d3e4-2222-3333-4444-555566667781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\backends">
+      <UniqueIdentifier>{c2d3e4f5-2222-3333-4444-555566667782}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- behaviac agent -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\agent.cpp"><Filter>behaviac\agent</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\context.cpp"><Filter>behaviac\agent</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\namedevent.cpp"><Filter>behaviac\agent</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\propertynode.cpp"><Filter>behaviac\agent</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\state_t.cpp"><Filter>behaviac\agent</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\agent\taskmethod.cpp"><Filter>behaviac\agent</Filter></ClCompile>
+    <!-- behaviac behaviortree -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\behaviortree.cpp"><Filter>behaviac\behaviortree</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\behaviortree_task.cpp"><Filter>behaviac\behaviortree</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\registernodes.cpp"><Filter>behaviac\behaviortree</Filter></ClCompile>
+    <!-- behaviac behaviortree attachments -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\attachments\Effector.cpp"><Filter>behaviac\behaviortree\attachments</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\attachments\Precondition.cpp"><Filter>behaviac\behaviortree\attachments</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\attachments\attachaction.cpp"><Filter>behaviac\behaviortree\attachments</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\attachments\event.cpp"><Filter>behaviac\behaviortree\attachments</Filter></ClCompile>
+    <!-- behaviac behaviortree nodes actions -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\action.cpp"><Filter>behaviac\behaviortree\nodes\actions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\assignment.cpp"><Filter>behaviac\behaviortree\nodes\actions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\compute.cpp"><Filter>behaviac\behaviortree\nodes\actions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\end.cpp"><Filter>behaviac\behaviortree\nodes\actions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\noop.cpp"><Filter>behaviac\behaviortree\nodes\actions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\wait.cpp"><Filter>behaviac\behaviortree\nodes\actions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\waitforsignal.cpp"><Filter>behaviac\behaviortree\nodes\actions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\actions\waitframes.cpp"><Filter>behaviac\behaviortree\nodes\actions</Filter></ClCompile>
+    <!-- behaviac behaviortree nodes conditions -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\and.cpp"><Filter>behaviac\behaviortree\nodes\conditions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\condition.cpp"><Filter>behaviac\behaviortree\nodes\conditions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\conditionbase.cpp"><Filter>behaviac\behaviortree\nodes\conditions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\false.cpp"><Filter>behaviac\behaviortree\nodes\conditions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\or.cpp"><Filter>behaviac\behaviortree\nodes\conditions</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\conditions\true.cpp"><Filter>behaviac\behaviortree\nodes\conditions</Filter></ClCompile>
+    <!-- behaviac behaviortree nodes composites -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\compositestochastic.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\ifelse.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\parallel.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\referencebehavior.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\selector.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\selectorloop.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\selectorprobability.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\selectorstochastic.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\sequence.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\sequencestochastic.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\composites\withprecondition.cpp"><Filter>behaviac\behaviortree\nodes\composites</Filter></ClCompile>
+    <!-- behaviac behaviortree nodes decorators -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratoralwaysfailure.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratoralwaysrunning.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratoralwayssuccess.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorcount.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorcountlimit.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorfailureuntil.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorframes.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratoriterator.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorlog.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorloop.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorloopuntil.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratornot.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorrepeat.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorsuccessuntil.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratortime.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\behaviortree\nodes\decorators\decoratorweight.cpp"><Filter>behaviac\behaviortree\nodes\decorators</Filter></ClCompile>
+    <!-- behaviac common -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\assert.cpp"><Filter>behaviac\common</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\base.cpp"><Filter>behaviac\common</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\convertutf.cpp"><Filter>behaviac\common</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\crc.cpp"><Filter>behaviac\common</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\factory.cpp"><Filter>behaviac\common</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\meta.cpp"><Filter>behaviac\common</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\operation.cpp"><Filter>behaviac\common</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\rttibase.cpp"><Filter>behaviac\common</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\system_vcc.cpp"><Filter>behaviac\common</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\workspace.cpp"><Filter>behaviac\common</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\file\file.cpp"><Filter>behaviac\common\file</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\file\filemanager.cpp"><Filter>behaviac\common\file</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\file\filesystem_vcc.cpp"><Filter>behaviac\common\file</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\file\listfiles.cpp"><Filter>behaviac\common\file</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\logger\logger.cpp"><Filter>behaviac\common\logger</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\logger\logmanager.cpp"><Filter>behaviac\common\logger</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\memory\memory.cpp"><Filter>behaviac\common\memory</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\object\tagobject.cpp"><Filter>behaviac\common\object</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\profiler\profiler.cpp"><Filter>behaviac\common\profiler</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\randomgenerator\randomgenerator.cpp"><Filter>behaviac\common\randomgenerator</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\serialization\textnode.cpp"><Filter>behaviac\common\serialization</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\socket\defaultsocketwrapper_vcc.cpp"><Filter>behaviac\common\socket</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\socket\socketconnect.cpp"><Filter>behaviac\common\socket</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\socket\socketconnect_base.cpp"><Filter>behaviac\common\socket</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\string\stringcrc.cpp"><Filter>behaviac\common\string</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\string\stringutils.cpp"><Filter>behaviac\common\string</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\thread\mutex_vcc.cpp"><Filter>behaviac\common\thread</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\thread\wrapper.cpp"><Filter>behaviac\common\thread</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\thread\wrapper_vcc.cpp"><Filter>behaviac\common\thread</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\xml\xml.cpp"><Filter>behaviac\common\xml</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\common\xml\xmlanalyzer.cpp"><Filter>behaviac\common\xml</Filter></ClCompile>
+    <!-- behaviac fsm -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\alwaystransition.cpp"><Filter>behaviac\fsm</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\fsm.cpp"><Filter>behaviac\fsm</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\fsmstate.cpp"><Filter>behaviac\fsm</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\startcondition.cpp"><Filter>behaviac\fsm</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\transitioncondition.cpp"><Filter>behaviac\fsm</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\waitframesstate.cpp"><Filter>behaviac\fsm</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\waitstate.cpp"><Filter>behaviac\fsm</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\fsm\waittransition.cpp"><Filter>behaviac\fsm</Filter></ClCompile>
+    <!-- behaviac htn -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\agentproperties.cpp"><Filter>behaviac\htn</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\agentstate.cpp"><Filter>behaviac\htn</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\htnmethod.cpp"><Filter>behaviac\htn</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\planner.cpp"><Filter>behaviac\htn</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\plannertask.cpp"><Filter>behaviac\htn</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\htn\task.cpp"><Filter>behaviac\htn</Filter></ClCompile>
+    <!-- behaviac network -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\network\network.cpp"><Filter>behaviac\network</Filter></ClCompile>
+    <!-- behaviac property -->
+    <ClCompile Include="..\..\Classes\External\behaviac\src\property\properties.cpp"><Filter>behaviac\property</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\behaviac\src\property\property.cpp"><Filter>behaviac\property</Filter></ClCompile>
+    <!-- imgui -->
+    <ClCompile Include="..\..\Classes\External\imgui\imgui.cpp"><Filter>imgui</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\imgui\imgui_demo.cpp"><Filter>imgui</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\imgui\imgui_draw.cpp"><Filter>imgui</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\imgui\imgui_tables.cpp"><Filter>imgui</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\imgui\imgui_widgets.cpp"><Filter>imgui</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\imgui\backends\imgui_impl_win32.cpp"><Filter>imgui\backends</Filter></ClCompile>
+    <ClCompile Include="..\..\Classes\External\imgui\backends\imgui_impl_opengl3.cpp"><Filter>imgui\backends</Filter></ClCompile>
+  </ItemGroup>
+</Project>

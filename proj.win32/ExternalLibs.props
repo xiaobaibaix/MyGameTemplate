@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <!-- 定义外部库根目录 -->
+    <ExternalLibsRoot>$(ProjectDir)..\Classes\External</ExternalLibsRoot>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- 添加到 VC++ 包含目录 -->
+    <IncludePath>$(ExternalLibsRoot)\behaviac\inc;$(ExternalLibsRoot)\entt\single_include;$(ExternalLibsRoot)\imgui;$(ExternalLibsRoot)\imgui\backends;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <!-- 同时添加到 C/C++ 附加包含目录 -->
+      <AdditionalIncludeDirectories>
+        $(ExternalLibsRoot)\behaviac\inc;
+        $(ExternalLibsRoot)\entt\single_include;
+        $(ExternalLibsRoot)\imgui;
+        $(ExternalLibsRoot)\imgui\backends;
+        %(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <!-- 链接 ExternalLibs 静态库 -->
+      <AdditionalDependencies>ExternalLibs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration).win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <PropertyGroup Label="UserMacros" />
+</Project>
